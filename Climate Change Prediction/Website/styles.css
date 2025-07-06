@@ -1,0 +1,132 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background: linear-gradient(135deg, #2b5876, #4e4376);
+    padding: 40px;
+    text-align: center;
+    color: white;
+}
+
+.header-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.header-content p {
+    font-size: 1.5rem;
+}
+
+/* Main Content Styles */
+.main-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card h2 {
+    font-size: 1.8rem;
+    margin: 15px 0;
+    color: #4e4376;
+}
+
+.card p {
+    padding: 0 20px 20px;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Form Section Styling */
+.form-section {
+    background-color: #e0f7fa;
+    padding: 40px;
+    text-align: center;
+}
+
+.form-section h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form {
+    display: inline-block;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+form input,
+form select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #4e4376;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #2b5876;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #4e4376;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+    font-size: 1rem;
+}

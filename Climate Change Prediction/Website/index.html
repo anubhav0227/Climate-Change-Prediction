@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Climate Change Prediction</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Climate Change Prediction</h1>
+            <p>Predicting Future Climate Changes Using Machine Learning</p>
+        </div>
+    </header>
+
+    <section class="main-content">
+        <div class="card">
+            <img src="C:\Users\ANUBHAV CHAUHAN\Desktop\Major\Climate Change Prediction website\images\Global_temperature.jpg" alt="Temperature">
+            <h2>Global Temperature Prediction</h2>
+            <p>Using ARIMA Model, we forecast global temperature changes.</p>
+        </div>
+
+        <div class="card">
+            <img src="C:\Users\ANUBHAV CHAUHAN\Desktop\Major\Climate Change Prediction website\images\Humidity.jpg" alt="Humidity">
+            <h2>Humidity Levels</h2>
+            <p>Projected humidity trends for the next 10 years.</p>
+        </div>
+
+        <div class="card">
+            <img src="C:\Users\ANUBHAV CHAUHAN\Desktop\Major\Climate Change Prediction website\images\Sea_level_rise.jpg" alt="Sea Level">
+            <h2>Sea Level Rise</h2>
+            <p>Expected rise in sea levels due to melting ice caps.</p>
+        </div>
+
+        <div class="card">
+            <img src="C:\Users\ANUBHAV CHAUHAN\Desktop\Major\Climate Change Prediction website\images\CO2_emissions.jpg" alt="CO2 Emissions">
+            <h2>CO2 Emissions</h2>
+            <p>Future predictions on CO2 emissions and air quality.</p>
+        </div>
+    </section>
+
+    <section class="form-section">
+        <h2>Request Climate Prediction</h2>
+        <form id="forecast-form">
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" placeholder="Enter city or region" required>
+
+            <label for="year-range">Year Range:</label>
+            <input type="number" id="start-year" name="start-year" placeholder="Start Year" required>
+            <input type="number" id="end-year" name="end-year" placeholder="End Year" required>
+
+            <label for="factor">Climate Factor:</label>
+            <select id="factor" name="factor">
+                <option value="temperature">Temperature</option>
+                <option value="humidity">Humidity</option>
+                <option value="sea-level">Sea Level</option>
+                <option value="co2">CO2 Emissions</option>
+            </select>
+
+            <button type="submit">Get Prediction</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Climate Change Prediction</p>
+    </footer>
+
+    <script>
+        document.getElementById('forecast-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Form submitted! Fetching climate forecast data...');
+            // Add your form submission logic here
+        });
+    </script>
+</body>
+</html>
